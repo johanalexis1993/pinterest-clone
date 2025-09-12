@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pinterest Replica</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Réplica de Pinterest con búsqueda de imágenes de Unsplash.">
+  <meta name="keywords" content="Pinterest, Unsplash, imágenes, búsqueda, Vite">
+  <meta name="author" content="Johan Alexis">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pinterest Replica">
+  <meta property="og:description" content="Es un proyecto educativo">
+  <meta property="og:image"
+    content="https://res.cloudinary.com/dx0fsy5fw/image/upload/f_auto,q_auto:eco/v1714231224/menu/amajoh_yeqekh.webp">
+  <meta property="og:url" content="https://pinterest-clone.netlify.app">
+  <link rel="icon"
+    href="https://res.cloudinary.com/dx0fsy5fw/image/upload/f_auto,q_auto:eco/v1714231224/menu/amajoh_yeqekh.webp"
+    type="image/webp">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__left">
+      <a href="/" class="logo" id="logoBtn" aria-label="Ir al inicio">Pinterest</a>
+    </div>
+    <nav class="nav__center" aria-label="Búsqueda">
+      <form id="searchForm" class="search" role="search">
+        <label for="searchInput" class="sr-only">Buscar imágenes</label>
+        <input id="searchInput" class="search__input" name="q" type="search" placeholder="Busca ideas…"
+          autocomplete="off">
+        <button type="submit" class="sr-only">Buscar</button>
+      </form>
+    </nav>
+    <div class="nav__right">
+      <a class="nav__link" href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a>
+    </div>
+  </header>
+  <main id="content">
+    <h1 class="sr-only">Resultados de imágenes</h1>
+    <ul id="gallery" class="masonry" aria-live="polite"></ul>
+  </main>
+  <footer class="site-footer">
+    <small>&copy; 2025 — Proyecto educativo</small>
+    <address>
+      Autor: <a href="mailto:johan@example.com">Johan Alexis</a>
+    </address>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
