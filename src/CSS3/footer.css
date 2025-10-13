@@ -1,0 +1,8 @@
+@layer components {
+  .site-footer {
+    border-top: var(--border-1) solid var(--line);
+    padding: var(--space-4);
+    text-align: center;
+    color: var(--muted);
+  }
+}

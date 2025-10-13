@@ -1,0 +1,85 @@
+@layer components {
+  .masonry {
+    list-style: none;
+    padding: var(--gap);
+    margin: 0;
+    width: 100%;
+    column-count: 1;
+    column-gap: var(--gap);
+  }
+  @media (min-width: 35rem) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  @media (min-width: 56.25rem) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  @media (min-width: 75rem) {
+    .masonry {
+      column-count: 4;
+    }
+  }
+  .masonry > li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 var(--gap);
+  }
+  .card {
+    display: inline-block;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-card);
+    border: var(--border-1) solid var(--line);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    &:hover {
+      transform: translateY(-0.125rem);
+      box-shadow: 0 0.375rem 1.5rem rgba(0, 0, 0, 0.08);
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      background: var(--color-divider);
+    }
+    .card__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-3) 0.75rem;
+      border-top: var(--border-1) solid var(--color-divider);
+      .card__avatar {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: var(--border-1) solid var(--color-hairline);
+      }
+      .card__user {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        a {
+          color: var(--text);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .card__label {
+        font-size: 0.6875rem;
+        color: var(--muted);
+        background: var(--chip);
+        padding: 0.125rem 0.375rem;
+        border-radius: var(--radius-full);
+        margin-left: auto;
+      }
+    }
+  }
+}

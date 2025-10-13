@@ -1,0 +1,19 @@
+@layer components {
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--accent);
+    color: var(--color-inverse);
+    border-radius: var(--radius-full);
+    padding: 0.625rem 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .logo.is-focusable:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 0.1875rem var(--focus);
+  }
+}

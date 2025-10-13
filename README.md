@@ -3,10 +3,18 @@
 pinterest-clone/
 ├─ node_modules/
 ├─ public/
+│ ├─ .env
 │ ├─ index.html
-│ ├─ index.html
+│ ├─ main.js
 │ └─ style.css
-├─ .env
+├─ src/
+│ ├─ api/
+│ └─ unsplash.js
+│ ├─ componets/
+│ ├─ gallery.js
+│ └─ serachBar.css
+│ └─ lib/
+│ └─ dom.css
 ├─ package-lock.json
 ├─ package.json
 ├─ README

@@ -1,0 +1,25 @@
+@layer components {
+  .search {
+    width: 100%;
+    max-width: var(--container-max);
+  }
+  .search__input {
+    color: var(--color-hairline);
+    width: 100%;
+    padding: 0.75rem var(--space-4);
+    border-radius: var(--radius-full);
+    border: var(--border-1) solid var(--color-border);
+    background: var(--color-surface-muted);
+    outline: none;
+    transition: border-color 0.15s ease, background 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+  .search__input::placeholder {
+    color: var(--color-placeholder);
+  }
+  .search__input:focus {
+    border-color: var(--color-border-focus);
+    background: var(--color-card);
+    box-shadow: 0 0 0 0.1875rem var(--focus);
+  }
+}
