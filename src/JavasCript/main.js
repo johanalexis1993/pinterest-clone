@@ -16,7 +16,7 @@ const doSearch = async (q) => {
 }
 mountSearch({ form: searchForm, input: searchInput, onQuery: doSearch })
 logoBtn.addEventListener('click', loadInitial)
-;(async function init() {
+;(async () => {
   if (!import.meta.env.VITE_UNSPLASH_ACCESS_KEY) {
     alert('Configura VITE_UNSPLASH_ACCESS_KEY en tu .env')
     return

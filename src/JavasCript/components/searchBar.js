@@ -1,4 +1,4 @@
-export function mountSearch({ form, input, onQuery }) {
+export const mountSearch = ({ form, input, onQuery }) => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault()
     const q = input.value

@@ -1,24 +1,29 @@
                                                     "ARQUITECTURA"
 
+<details>
+  <summary>Ver árbol completo</summary>
+
+```text
 pinterest-clone/
-├─ node_modules/
-├─ public/
-│ ├─ .env
-│ ├─ index.html
-│ ├─ main.js
-│ └─ style.css
-├─ src/
-│ ├─ api/
-│ └─ unsplash.js
-│ ├─ componets/
-│ ├─ gallery.js
-│ └─ serachBar.css
-│ └─ lib/
-│ └─ dom.css
-├─ package-lock.json
-├─ package.json
-├─ README
-└─ vite.config.js
+  ├─ public/
+  │ ├─ .env
+  │ ├─ index.html
+  │ ├─ main.js
+  │ └─ style.css
+  ├─ src/
+  │ ├─ api/
+  │ └─ unsplash.js
+  │ ├─ componets/
+  │ ├─ gallery.js
+  │ └─ serachBar.css
+  │ └─ lib/
+  │ └─ dom.css
+  ├─ package-lock.json
+  ├─ package.json
+  ├─ README
+  └─ vite.config.js
+
+```
 
                                           "Pinterest Replica (Vite + Unsplash)"
 
